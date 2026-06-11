@@ -1,0 +1,63 @@
+/* =========================
+   1. Base / Reset
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f9fc;
+    color: #1f2937;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: #0f4c81;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+}
+/* =========================
+   2. Utility Classes
+========================= */
+.container {
+    width: 90%;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.narrow {
+    max-width: 760px;
+}
+
+.center {
+    text-align: center;
+}
+
+.section {
+    padding: 4rem 0;
+}
+
+.section-alt {
+    background-color: #eef3f9;
+}
+
