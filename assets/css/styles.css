@@ -71,13 +71,15 @@ header {
     margin-left: 150px;
 }
 
+/* Navigation Links */
+
 .navigation a {
     position: relative;
     font-size: 18px;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 50px;
+    margin-left: 5px;
     white-space: nowrap;
 }
 
@@ -94,6 +96,8 @@ header {
     transform: scaleX(0);
     transition: transform 0.5s ease;
 }
+
+/* Navigation underline hover effect */
 
 .navigation a:hover::after {
     transform: scaleX(1);
