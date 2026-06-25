@@ -4,7 +4,7 @@
 
 /* Get page elements */
 const signupBtn = document.getElementById("signupBtn");
-const signinBtn = document.getElementById("signinBtn");
+const signinBtn = document.getElementById("loginBtn");
 const nameField = document.getElementById("nameField");
 const title = document.getElementById("title");
 
@@ -20,15 +20,15 @@ let currentMode = "signup";
 signinBtn.onclick = function () {
 
     if (currentMode !== "signin") {
-        /* Switch to Sign In mode first */
+        /* Switch to Log In mode first */
         nameField.style.maxHeight = "0";
         nameField.style.margin = "0";
-        title.innerHTML = "Sign In";
+        title.innerHTML = "Log In";
 
         signupBtn.classList.add("disable");
         signinBtn.classList.remove("disable");
 
-        currentMode = "signin";
+        currentMode = "login";
         return;
     }
 

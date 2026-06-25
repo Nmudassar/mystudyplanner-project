@@ -54,13 +54,22 @@ header {
     z-index: 99;
 }
 
-/* Logo */
-.logo {
+/* Logo-conatiner */
+.logo-container {
     font-size: 25px;
     font-weight: 700;
     color: #fff;
     user-select: none;
     white-space: nowrap;
+    margin: 0;
+}
+
+/* Subtitle */
+.subtitle {
+    font-size: 16px;
+    color: #fff;
+    margin-left: 20px;
+    margin-top: 5px;
 }
 
 /* Navigation */
@@ -125,11 +134,11 @@ header {
     color: #6C2CF6;
 }
 /*========================
- 4. signi/signup Buttons
+ 4. login/signup Buttons
 
 ========================= */
 
-.signin-container{
+.login-container{
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/background.png');
@@ -230,4 +239,192 @@ form p a{
 .btn-field button.disable{
     background: #eaeaea;
     color: #555;
+}
+
+/*================
+Home Page 
+ =================*/
+/* =========================
+   Main Page Layout
+========================= */
+
+/* Main content area */
+.main-layout{
+    max-width: 100%px;      /* Maximum width of page content */
+    margin: auto;           /* Centers content horizontally */
+    padding-top: 100px;     /* Creates space below fixed header */
+    
+}
+
+/* General container */
+.container{
+    flex: 1;                /* Allows container to grow and fill available space */
+    padding: 20px;          /* Adds space inside container */
+    
+}
+
+/* =========================
+   Section Display
+========================= */
+
+/* Active section visible on screen */
+.section.active{
+    display: block;         /* Shows active section */
+}
+
+/* =========================
+   Section Header
+========================= */
+
+/* Header inside Overview section */
+.section-header{
+    display: flex;                  /* Places items side by side */
+    justify-content: space-between; /* Pushes items to opposite ends */
+    align-items: center;            /* Aligns items vertically */
+}
+
+
+/* =========================
+   Overview Dashboard Card
+========================= */
+
+.section{
+    min-height: 600px;      /* Makes overview area taller */
+    padding: 30px;          /* Space inside card */
+    background: white;      /* White background */
+    border-radius: 12px;    /* Rounded corners */
+}
+
+/* =========================
+   Overview Section Header
+========================= */
+
+/* Layout for Overview title and description */
+.section-header{
+    display: flex;                  /* Places items in a row */
+    justify-content: space-between; /* Pushes items to opposite sides */
+    align-items: center;            /* Vertically aligns items */
+    width: 100%;                    /* Uses full container width */
+}
+
+/* Remove default spacing */
+.section-header h2,
+.section-header p{
+    margin: 0;
+}
+
+
+/* =========================
+   Overview Title
+========================= */
+
+.section-header h2{
+    font-size: 32px;        /* Size of Overview heading */
+    color: #300a80;     /* Dark purple color */
+    font-weight: 700;       /* Bold text */
+}
+
+
+/* =========================
+   Overview Description
+========================= */
+
+.description {
+    font-size: 16px;        /* Paragraph text size */
+    color: #f126a6;            /* Dark grey text */
+}
+
+/* =========================
+   Home Section Styling
+========================= */
+
+.section{
+    background: #ffffff;    /* White card background */
+    padding: 30px;          /* Space inside section */
+    border-radius: 12px;    /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Soft shadow */
+    margin-top: 20px;       /* Space above section */
+}
+
+/*==================
+Cards-containers
+=================*/
+.card-container{
+    display: flex;
+    justify-content: center
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+/*===============
+Cards
+=================*/
+.card{
+    width: 400px;
+    background-color: #ca8bf1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: #300a80;
+    margin: 10px;
+}
+.card-content{
+    padding: 16px;
+}
+.card-content h3{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+/* =========================
+   Card Button Styling
+========================= */
+
+.card-content .btn{
+
+    width: 85px;              /* Sets the button width */
+
+    height: 30px;              /* Sets the button height */
+
+    background: #3c00a0;       /* Dark purple background */
+
+    color: #ffffff;            /* White text color */
+
+    border-radius: 20px;       /* Makes button corners rounded */
+
+    border: none;              /* Removes the default browser border */
+
+    outline: none;             /* Removes outline when button is clicked */
+
+    cursor: pointer;           /* Changes mouse cursor to a pointer */
+
+    display: flex;             /* Uses Flexbox for easy alignment */
+
+    justify-content: center;   /* Horizontally centers the button text */
+
+    align-items: center;       /* Vertically centers the button text */
+
+    text-decoration: none;     /* Removes underline if button is an <a> tag */
+
+    font-size: 14px;           /* Sets the font size */
+
+    font-weight: 500;          /* Makes the text semi-bold */
+
+    white-space: nowrap;       /* Prevents the text from wrapping onto multiple lines */
+
+    transition: background 0.3s ease; /* Smooth background color transition on hover */
+}
+
+/* =========================
+   Button Hover Effect
+========================= */
+
+.card-content .btn:hover{
+
+    background: #6C2CF6;       /* Changes button to lighter purple when hovered */
+
+    color: #ffffff;            /* Keeps the text white */
+
+    transform: scale(1.05);    /* Slightly enlarges the button */
+
+    transition: all 0.3s ease; /* Makes hover effect smooth */
+
 }
