@@ -243,33 +243,72 @@ Home Page
 /*==================
 Cards-containers
 =================*/
-.card-container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 100px;
+/* =========================
+   Dashboard Card Container
+========================= */
+
+.dashboard-card-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 100px auto 0;
 }
 
-/*===============
-Cards
-=================*/
+/* =========================
+   Dashboard Cards
+========================= */
+
 .card{
-    width: 500px;
-    height: 150px;
+    width: 100%;
+    min-height: 160px;
     background-color: #d7c7e4;
-    border-radius: 10px;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: #300a80;
-    margin: 10px;
+    box-shadow: 0 4px 12px rgba(48, 10, 128, 0.25);
+    padding: 20px;
 }
+
+/* Different card colours */
+.card:nth-child(1){
+    background-color: #d7c7e4;
+}
+
+.card:nth-child(2){
+    background-color: #f8c7dc;
+}
+
+.card:nth-child(3){
+    background-color: #c7d9ff;
+}
+
+.card:nth-child(4){
+    background-color: #c7f0dc;
+}
+
+.card:nth-child(5){
+    background-color: #fff0c7;
+}
+
+.card:nth-child(6){
+    background-color: #e0c7ff;
+}
+
+/* =========================
+   Card Content
+========================= */
+
 .card-content{
     padding: 16px;
 }
+
 .card-content h3{
     font-size: 18px;
-    margin-bottom: 8px;
-
+    color: #300a80;
+    margin-bottom: 12px;
+    font-weight: bold;
 }
+
 /* =========================
    Card Button Styling
 ========================= */
@@ -292,7 +331,7 @@ Cards
 
     cursor: pointer;           /* Changes mouse cursor to a pointer */
 
-    display: flex;             /* Uses Flexbox for easy alignment */
+    display: grid;             /* Uses Flexbox for easy alignment */
 
     justify-content: center;   /* Horizontally centers the button text */
 
