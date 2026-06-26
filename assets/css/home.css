@@ -36,8 +36,19 @@ a:focus {
 ul {
     list-style: none;
 }
+h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+h2{
+    font-size: 40px;
+    font-weight: 500;
+}
 
-
+h3{
+    font-size: 20px;
+    font-weight: 500;
+}
 /*=========================/* =========================
    2. Header
 ========================= */
@@ -135,9 +146,6 @@ header {
 }
 
 
-/*================
-Home Page 
- =================*/
 /* =========================
    Main Page Layout
 ========================= */
@@ -240,13 +248,9 @@ Home Page
     margin-top: 20px;       /* Space above section */
 }
 
-/*==================
-Cards-containers
-=================*/
 /* =========================
    Dashboard Card Container
 ========================= */
-
 .dashboard-card-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -295,7 +299,7 @@ Cards-containers
 }
 
 /* =========================
-   Card Content
+   Cards Content
 ========================= */
 
 .card-content{
@@ -362,4 +366,116 @@ Cards-containers
 
     transition: all 0.3s ease; /* Makes hover effect smooth */
 
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer{
+    background: #300a80;
+    color: #ffffff;
+    padding: 60px 80px 20px;
+}
+
+/* Footer main container */
+.footer-content{
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 120px;
+}
+
+/* Each footer column */
+.footer-section{
+    flex: 1;
+    text-align: left;
+}
+
+/* Footer headings */
+.footer-section h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+/* Footer paragraphs */
+.footer-section p{
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ffffff;
+}
+
+/* =========================
+   Quick Links
+========================= */
+
+.list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list li{
+    margin-bottom: 15px;
+}
+
+.list li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.list li a:hover{
+    color: #ffb703;
+}
+
+/* =========================
+   Social Icons
+========================= */
+
+.social-icons{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons li{
+    display: inline-block;
+}
+
+.social-icons li a{
+    color: #ffffff;
+    font-size: 28px;
+    transition: 0.3s;
+}
+
+.social-icons li a:hover{
+    color: #ffb703;
+    transform: scale(1.2);
+}
+
+/* =========================
+   Footer Bottom
+========================= */
+
+.footer-bottom{
+    border-top: 1px solid rgba(255,255,255,.2);
+    margin-top: 40px;
+    padding-top: 20px;
+
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
 }
