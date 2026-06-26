@@ -49,7 +49,7 @@ h3{
     font-size: 20px;
     font-weight: 500;
 }
-/*=========================/* =========================
+/*=========================
    2. Header
 ========================= */
 header {
@@ -92,7 +92,6 @@ header {
 }
 
 /* Navigation Links */
-
 .navigation a {
     position: relative;
     font-size: 18px;
@@ -154,8 +153,8 @@ header {
 .main-layout{
     max-width: 100%;      /* Maximum width of page content */
     margin: auto;           /* Centers content horizontally */
-    padding-top: 220px;     /* Creates space below fixed header */
-    
+    padding-top: 100px;     /* Creates space below fixed header */
+    padding-bottom: 5px;    
 }
 
 /* General container */
@@ -374,9 +373,7 @@ header {
 
 /* Styles the entire footer section */
 footer{
-
-    /* Sets the footer background colour */
-    background: #300a80;
+    background: #300a80; /* Sets the footer background colour */
 
     /* Sets the default text colour to white */
     color: #ffffff;
