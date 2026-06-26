@@ -385,7 +385,7 @@ footer{
        60px = top
        80px = left & right
        20px = bottom */
-    padding: 60px 80px 20px;
+    padding: 35px 60px 15px;
 }
 
 /* =========================
@@ -411,7 +411,7 @@ footer{
     align-items: flex-start;
 
     /* Creates space between each footer column */
-    gap: 120px;
+    gap: 60px;  
 }
 
 /* =========================
@@ -436,13 +436,13 @@ footer{
 .footer-section h3{
 
     /* Heading font size */
-    font-size: 30px;
+    font-size: 22px;
 
     /* Semi-bold text */
     font-weight: 600;
 
     /* Space below heading */
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 
     /* White heading colour */
     color: #ffffff;
@@ -456,13 +456,13 @@ footer{
 .footer-section p{
 
     /* Space below each paragraph */
-    margin-bottom: 15px;
+    margin-bottom: 8px;
 
     /* Paragraph font size */
-    font-size: 18px;
+    font-size: 16px;
 
     /* Adds spacing between lines */
-    line-height: 1.8;
+    line-height: 1.4;
 
     /* White text colour */
     color: #ffffff;
@@ -489,7 +489,7 @@ footer{
 .list li{
 
     /* Adds space between each link */
-    margin-bottom: 15px;
+    margin-bottom: 8px;
 }
 
 /* Styles the Quick Link anchor tags */
@@ -552,7 +552,7 @@ footer{
     color: #ffffff;
 
     /* Icon size */
-    font-size: 28px;
+    font-size: 22px;
 
     /* Smooth hover transition */
     transition: 0.3s;
@@ -579,10 +579,10 @@ footer{
     border-top: 1px solid rgba(255,255,255,.2);
 
     /* Space above copyright section */
-    margin-top: 40px;
+    margin-top: 20px;
 
     /* Space below top border */
-    padding-top: 20px;
+    padding-top: 12px;
 
     /* Centers copyright text */
     text-align: center;
