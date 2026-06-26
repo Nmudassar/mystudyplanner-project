@@ -58,7 +58,7 @@ header {
     left: 0;
     width: 100%;
     padding: 20px 50px;
-    background: #6C2CF6;
+    background: #2d0e6f;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -154,7 +154,7 @@ header {
 .main-layout{
     max-width: 100%px;      /* Maximum width of page content */
     margin: auto;           /* Centers content horizontally */
-    padding-top: 100px;     /* Creates space below fixed header */
+    padding-top: 220px;     /* Creates space below fixed header */
     
 }
 
@@ -249,14 +249,15 @@ header {
 }
 
 /* =========================
-   Dashboard Card Container
+   Dashboard Container
 ========================= */
 .dashboard-card-container{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 25px;
     max-width: 1100px;
     margin: 100px auto 0;
+    padding: 0 20px;
 }
 
 /* =========================
@@ -267,7 +268,6 @@ header {
     width: 100%;
     min-height: 160px;
     background-color: #d7c7e4;
-    border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(48, 10, 128, 0.25);
     padding: 20px;
@@ -367,7 +367,6 @@ header {
     transition: all 0.3s ease; /* Makes hover effect smooth */
 
 }
-
 
 /* =========================
    Footer
