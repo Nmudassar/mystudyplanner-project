@@ -1,0 +1,265 @@
+/* =========================
+   General Reset
+========================= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: #c6a9f7;
+    color: #1f2937;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/* =========================
+   Theme Colours
+========================= */
+:root{
+    --primary-purple: #300a80;
+    --secondary-purple: #6C2CF6;
+    --button-purple: #3c00a0;
+    --light-purple: #c6a9f7;
+    --card-purple: #d7c7e4;
+    --white: #ffffff;
+    --grey: #808080;
+    --dark-text: #1f2937;
+}
+
+/* =========================
+   Header / Navbar
+========================= */
+header{
+    width: 100%;
+    background: var(--primary-purple);
+    color: var(--white);
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container{
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.subtitle{
+    font-size: 16px;
+    color: var(--white);
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navigation a{
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navigation a:hover{
+    color: #ffb703;
+}
+
+.btnLogin-popup{
+    width: 100px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid var(--white);
+    border-radius: 6px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.btnLogin-popup:hover{
+    background: var(--white);
+    color: var(--secondary-purple);
+}
+
+/* =========================
+   Main Layout
+========================= */
+.main-layout{
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* =========================
+   Sections
+========================= */
+.section{
+    background: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.section-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-header h2{
+    color: var(--primary-purple);
+    font-size: 32px;
+}
+
+.description{
+    color: #f126a6;
+    font-size: 16px;
+}
+
+/* =========================
+   Cards
+========================= */
+.dashboard-card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card{
+    min-height: 160px;
+    background: var(--card-purple);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(48,10,128,0.25);
+}
+
+.card-content h3{
+    color: var(--primary-purple);
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.card-content .btn{
+    width: 100px;
+    height: 35px;
+    background: var(--button-purple);
+    color: var(--white);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-content .btn:hover{
+    background: var(--secondary-purple);
+}
+
+/* =========================
+   Footer
+========================= */
+footer{
+    background: var(--primary-purple);
+    color: var(--white);
+    padding: 35px 60px 15px;
+}
+
+.footer-content{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.footer-section{
+    flex: 1;
+}
+
+.footer-section h3{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.footer-section p,
+.list li a{
+    color: var(--white);
+    font-size: 16px;
+}
+
+.list li{
+    margin-bottom: 8px;
+}
+
+.social-icons{
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a{
+    color: var(--white);
+    font-size: 22px;
+}
+
+.footer-bottom{
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255,255,255,.2);
+}
+
+/* =========================
+   Responsive Design
+========================= */
+@media screen and (max-width: 768px){
+    header{
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .navigation{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section-header{
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icons{
+        justify-content: center;
+    }
+}
